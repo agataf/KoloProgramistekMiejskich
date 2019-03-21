@@ -21,7 +21,7 @@ Przez jaką liczbę chcesz podzielić 27?
 > 6
 27/6 = 4 reszta 3
 ```
-Podpowiedź: sprawdź w dokumentacji pythona różnicę między / i //
+Podpowiedź: sprawdź w dokumentacji pythona różnicę między / i //, oraz znak %
 
 ### 2. KALKULATOR
 Stwórz program-kalkulator, który będzie traktował znak & jako znak mnożenia.
