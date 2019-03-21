@@ -1,1 +1,2 @@
-# KoloProgramistekMiejskich
+# Koło Programistek Miejskich
+
