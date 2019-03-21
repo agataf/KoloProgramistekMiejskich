@@ -23,7 +23,20 @@ Przez jaką liczbę chcesz podzielić 27?
 ```
 Podpowiedź: sprawdź w dokumentacji pythona różnicę między / i //
 
-### 2. REWERS
+### 2. KALKULATOR
+Stwórz program-kalkulator, który będzie traktował znak & jako znak mnożenia.
+```
+Podaj działanie
+>2&8
+16
+>2&-8
+-16
+```
+podpowiedź: `split()` definiując na jakim znaku powinien być dzielony string
+https://docs.python.org/3/library/stdtypes.html#str.split
+
+
+### 3. REWERS
 Przyjmij od użytkowniczki 5 słów, zwróć je w odwróconej kolejności.
 ```
 Podaj 5 słów
@@ -33,6 +46,7 @@ latwe calkiem wlasciwie jest kodowanie
 Wersja trudniejsza: spróbuj użyć tylko jednej zmiennej: listy.
 Przyda ci się funkcja append
 ```
+https://www.tutorialspoint.com/python/list_append.htm
 
 ## POZIOM 3:
 ## 1. RODZINA
@@ -64,3 +78,4 @@ if a = 5:
 	b = a+b
 ```
 aby zrozumieć je lepiej, poszukajcie podpowiedzi online.
+https://www.tutorialspoint.com/python/python_if_else.htm
