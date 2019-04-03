@@ -45,7 +45,7 @@ Ania, urodziłaś się w 1986 roku.
 
 ### 4. **Rzut kośćmi. 
 
-Przyjmij k1 i k2 jako ilość wyrzuconych oczek.
+Przyjmij k1 i k2 jako liczba wyrzuconych oczek.
 
 Sprawdź, czy podane wartości są w odpowiednim zakresie wartości (od 1 to 6).
 
@@ -65,7 +65,8 @@ Podpowiedź: użyj funkcji `range()`.
 
 ### 2. Liczby parzyste
 Używając pętli for, stwórz nową listę zawierającą jedynie parzyste elementy listy `liczby`:
-```liczby = [
+```
+liczby = [
     951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
     615, 83, 165, 141, 501, 263, 617, 865, 575, 219, 390, 984, 592, 236, 105, 942, 941,
     386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
