@@ -3,7 +3,7 @@
 ## if, if-else, if-elif-else
 ### 1. Hasło
 
-Zapytaj użytkowniczkę o hasło. Jeśli zna poprawne hasło, pozwól jej wejść. Jeśli nie zna, powiedz że hasło jest błędne.
+Zdefiniuj swoje hasło (np. `haslo = 3729`). Zapytaj użytkowniczkę o hasło. Jeśli zna poprawne hasło, pozwól jej wejść. Jeśli nie zna, powiedz że hasło jest błędne.
 ```
 Podaj PIN
 > 2880
@@ -29,6 +29,7 @@ Jesteś małoletnia.
 Podpowiedź: przyda się tutaj forma if-elif-else
 
 ### 3. Wiek
+Zauważ że po samym roku nie można podać dokładnego wieku. Jeśli ktoś ma urodziny np. w sierpniu, błędnie założymy, że ma już tyle lat, ile wynikałoby z roku urodzenia.
 
 Zapytaj użytkowniczkę jak na na imię, i ile ma lat i wydrukuj komunikat:
 ```
@@ -41,13 +42,14 @@ Czy miałaś już urodziny w tym roku? (tak/nie)
 Ania, urodziłaś się w 1986 roku.
 ```
 
+
 ### 4. **Rzut kośćmi. 
 
 Przyjmij k1 i k2 jako ilość wyrzuconych oczek.
 
 Sprawdź, czy podane wartości są w odpowiednim zakresie wartości (od 1 to 6).
 
-Jeśli nie, wydrukuj odpowiedni komunikat.
+Jeśli nie, wydrukuj odpowiedni komunikat (np. "wartość 7 jest niepoprawna").
 
 Jeżeli zakres jest poprawny, podaj wynik według następującego klucza:
 
