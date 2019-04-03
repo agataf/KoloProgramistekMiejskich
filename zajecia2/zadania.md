@@ -55,6 +55,27 @@ Jeżeli zakres jest poprawny, podaj wynik według następującego klucza:
 - jeśli suma to 2, 3, lub 12, wydrukuj "przegrana"
 - w innym wypadku wydrukuj liczbę oczek.
 
+## for, range
+### 1. Kwadraty
+Napisz program który wydrukuje kwadraty wszystkich liczb od 0 do 10.
+
+### 2. Liczby parzyste
+Używając pętli for, stwórz nową listę zawierającą jedynie parzyste elementy listy `liczby`:
+```liczby = [
+    951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
+    615, 83, 165, 141, 501, 263, 617, 865, 575, 219, 390, 984, 592, 236, 105, 942, 941,
+    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+    958, 609, 842, 451, 688, 753, 854, 685, 93, 857, 440, 380, 126, 721, 328, 753, 470,
+    743, 527
+]
+```
+Źródło: https://www.learnpython.org/en/Loops
+
+### **3. Ulubione
+Używając pętli FOR, zapytaj użytkowniczkę o pięć ulubionych zespołów. Każdy z nich dodaj do listy "ulubione" używając funkcji `append()`. Wydrukuj zespoły od tyłu, używając pętli FOR.
+
 ## while
 ### 1. Hasło
 Zapytaj użytkowniczkę o hasło. Jeśli zna poprawne hasło, pozwól jej wejść. Jeśli nie zna, zapytaj o nie ponownie.
@@ -84,31 +105,26 @@ Czy miałaś już urodziny w tym roku? (tak/nie)
 Ania, urodziłaś się w 1986 roku.
 ```
 
-## for, range
-### 1. Liczby parzyste
-Używając pętli for, stwórz nową listę zawierającą jedynie parzyste elementy listy `liczby`:
-```liczby = [
-    951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
-    615, 83, 165, 141, 501, 263, 617, 865, 575, 219, 390, 984, 592, 236, 105, 942, 941,
-    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
-    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
-    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
-    958, 609, 842, 451, 688, 753, 854, 685, 93, 857, 440, 380, 126, 721, 328, 753, 470,
-    743, 527
-]
-```
-Źródło: https://www.learnpython.org/en/Loops
-
-### 2. Ulubione
-Używając pętli FOR, zapytaj użytkowniczkę o pięć ulubionych zespołów. Każdy z nich dodaj do listy "ulubione" używając funkcji `append()`. Wydrukuj zespoły od tyłu, używając pętli FOR.
-
-## funkcje
+## **funkcje
 ### 1. Suma
 Napisz funkcję, która zwraca liczbę elementów w liście o wartości powyżej 30. 
 ```
 lista = [10, 40, 56, 23, 56, 1]
 powyzej30(lista)
 > 3
+```
+
+### 1. Trójkąt
+Napisz funkcję, która drukuje trójkąt o podanej wysokości.
+
+```
+trójkąt(5)
+>
+*
+* *
+* * *
+* * * *
+* * * * *
 ```
 
 
