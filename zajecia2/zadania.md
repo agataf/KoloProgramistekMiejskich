@@ -12,7 +12,7 @@ To hasło jest błędne.
 Podaj PIN
 > 3729
 Pin poprawny! Możesz wejść.
-'''
+```
 
 ### 2. Pełnoletniość
 
@@ -25,13 +25,13 @@ Jesteś niepełnoletnia.
 Ile masz lat?
 > 10
 Jesteś małoletnia.
-'''
+```
 Podpowiedź: przyda się tutaj forma if-elif-else
 
 ### 3. Wiek
 
 Zapytaj użytkowniczkę jak na na imię, i ile ma lat i wydrukuj komunikat:
-'''
+```
 Jak masz na imię?
 > Ania
 Ile masz lat?
@@ -39,7 +39,7 @@ Ile masz lat?
 Czy miałaś już urodziny w tym roku? (tak/nie)
 > nie
 Ania, urodziłaś się w 1986 roku.
-'''
+```
 
 ### 4. **Rzut kośćmi. 
 
@@ -66,7 +66,7 @@ To hasło jest błędne, spróbuj ponownie.
 Podaj PIN
 > 3729
 Pin poprawny! Możesz wejść.
-'''
+```
 
 ## 2. Wiek
 
@@ -82,7 +82,7 @@ To jest błędna odpowiedź. Podaj odpowiedź tak lub nie.
 Czy miałaś już urodziny w tym roku? (tak/nie)
 > nie
 Ania, urodziłaś się w 1986 roku.
-'''
+```
 
 ## FOR
 ### 1. Ulubione
