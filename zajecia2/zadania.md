@@ -57,7 +57,9 @@ Jeżeli zakres jest poprawny, podaj wynik według następującego klucza:
 
 ## for, range
 ### 1. Kwadraty
-Napisz program który wydrukuje kwadraty wszystkich liczb od 0 do 10.
+Używając pętli for, wydrukuj kwadraty wszystkich liczb od 0 do 10.
+
+Podpowiedź: użyj funkcji `range()`.
 
 ### 2. Liczby parzyste
 Używając pętli for, stwórz nową listę zawierającą jedynie parzyste elementy listy `liczby`:
@@ -75,6 +77,9 @@ Używając pętli for, stwórz nową listę zawierającą jedynie parzyste eleme
 
 ### **3. Ulubione
 Używając pętli FOR, zapytaj użytkowniczkę o pięć ulubionych zespołów. Każdy z nich dodaj do listy "ulubione" używając funkcji `append()`. Wydrukuj zespoły od tyłu, używając pętli FOR.
+
+### **4. Mnożenie
+Poproś użytkowniczkę o 5 liczb, a następnie podaj wynik ich mnożenia. Użyj nie więcej niż 7 linii.
 
 ## while
 ### 1. Hasło
@@ -107,6 +112,7 @@ Ania, urodziłaś się w 1986 roku.
 
 ## **funkcje
 ### 1. Suma
+
 Napisz funkcję, która zwraca liczbę elementów w liście o wartości powyżej 30. 
 ```
 lista = [10, 40, 56, 23, 56, 1]
@@ -114,7 +120,7 @@ powyzej30(lista)
 > 3
 ```
 
-### 1. Trójkąt
+### 2. Trójkąt
 Napisz funkcję, która drukuje trójkąt o podanej wysokości.
 
 ```
@@ -127,5 +133,12 @@ trójkąt(5)
 * * * * *
 ```
 
+### 3. Suma podzielnych
+Napisz funkcję, która podaje sumę elementów listy podzielnych przez 3.
+```
+lista = [12, 42, 56, 23, 56, 1]
+sumaPodzielnych(lista)
+> 54
+```
 
 
