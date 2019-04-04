@@ -113,35 +113,3 @@ Czy miałaś już urodziny w tym roku? (tak/nie)
 Ania, urodziłaś się w 1986 roku.
 ```
 
-## **funkcje
-### 1. Suma
-
-Napisz funkcję, która zwraca liczbę elementów w liście o wartości powyżej 30. 
-```
-lista = [10, 40, 56, 23, 56, 1]
-powyzej30(lista)
-> 3
-```
-
-### 2. Trójkąt
-Napisz funkcję, która drukuje trójkąt o podanej wysokości.
-
-```
-trójkąt(5)
->
-*
-* *
-* * *
-* * * *
-* * * * *
-```
-
-### 3. Suma podzielnych
-Napisz funkcję, która podaje sumę elementów listy podzielnych przez 3.
-```
-lista = [12, 42, 56, 23, 56, 1]
-sumaPodzielnych(lista)
-> 54
-```
-
-
