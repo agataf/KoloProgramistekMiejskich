@@ -36,6 +36,7 @@ Podaj liczbę
 > 782
 Ta liczba jest dodatnia
 ```
+
 ### 4. Zajęcia (IF-ELSE)
 Napisz program, który pyta użytkowniczkę o dzień tygodnia, a następnie
 - jeśli jest środa, odpowiada "dzisiaj są zajęcia"
@@ -52,6 +53,35 @@ Napisz program, który pyta użytkowniczkę o dzień tygodnia, a następnie poda
 Podaj dzień tygodnia
 > Środa
 Dzisiaj podajemy gniocci.
+```
+
+### 6. Trójkąt (FOR)
+Poproś użytkowniczkę o liczbę i wydrukuj trójkąt o podanej wysokości.
+
+```
+Podaj liczbę
+> 5
+*
+* *
+* * *
+* * * *
+* * * * *
+```
+
+### 7. Trójkąt 2 (WHILE)
+Wykonaj powyższe zadanie, używając pętli WHILE.
+
+```
+Jak masz na imię?
+> Ania
+Ile masz lat?
+> 32
+Czy miałaś już urodziny w tym roku? (tak/nie)
+> jhhf
+To jest błędna odpowiedź. Podaj odpowiedź tak lub nie.
+Czy miałaś już urodziny w tym roku? (tak/nie)
+> nie
+Ania, urodziłaś się w 1986 roku.
 ```
 
 ## POZIOM TRUDNIEJSZY
@@ -95,9 +125,11 @@ Używając pętli FOR, zapytaj użytkowniczkę o pięć ulubionych zespołów. K
 ### 5. Mnożenie
 Poproś użytkowniczkę o 5 liczb, a następnie podaj wynik ich mnożenia. Użyj nie więcej niż 7 linii.
 
-### 6. Wiek
+### 6. Wiek (WHILE)
+Zapytaj użytkowniczkę jak na na imię, i ile ma lat i wydrukuj komunikat.
 
-Zapytaj użytkowniczkę jak na na imię, i ile ma lat i wydrukuj komunikat:
+jeśli użytkowniczka poda błędną odpowiedź na którekolwiek z pytań (wiek nie będzie liczbą, lub odpowiedź nie będzie brzmiała tak/nie), użyj pętli while, dopóki nie dostaniesz poprawnej odpowiedzi.
+
 ```
 Jak masz na imię?
 > Ania
