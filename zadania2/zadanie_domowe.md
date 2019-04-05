@@ -71,18 +71,6 @@ Podaj liczbę
 ### 7. Trójkąt 2 (WHILE)
 Wykonaj powyższe zadanie, używając pętli WHILE.
 
-```
-Jak masz na imię?
-> Ania
-Ile masz lat?
-> 32
-Czy miałaś już urodziny w tym roku? (tak/nie)
-> jhhf
-To jest błędna odpowiedź. Podaj odpowiedź tak lub nie.
-Czy miałaś już urodziny w tym roku? (tak/nie)
-> nie
-Ania, urodziłaś się w 1986 roku.
-```
 
 ## POZIOM TRUDNIEJSZY
 ### 1. Rzut kośćmi. 
