@@ -48,11 +48,11 @@ Dzisiaj nie ma zajęć.
 
 ### 5. Menu (IF-ELIF-ELSE)
 Napisz program, który pyta użytkowniczkę o dzień tygodnia, a następnie podaje menu na dany dzień. Każdego dnia menu jest inne: Poniedziałek - pizza. Wtorek - pierogi. Środa - gniocci. Czwartek - ryba. Piątek - spaghetti.
-
+```
 Podaj dzień tygodnia
 > Środa
 Dzisiaj podajemy gniocci.
-
+```
 
 ## POZIOM TRUDNIEJSZY
 ### 1. Rzut kośćmi. 
