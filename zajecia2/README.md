@@ -2,7 +2,15 @@
 Na tych zajęciach nauczymy się wyrażeń logicznych i pętli w Pythonie.
 
 ## booleans (wartości zerojedynkowe)
-Na poprzednich zajęciach wspomniałyśmy o `bool` (boolean, wartość zerojedynkowa) jako jednego z typu danych (inne typy to `int` (liczba naturalna, np. `-654`), `float` (liczba rzeczywista, zawiera `int`y, np. `4.3039`), `str` (string, słowo, jak `"hello"`)).
+Na poprzednich zajęciach wspomniałyśmy o `bool` (boolean, wartość zerojedynkowa) jako jednego z typu danych 
+
+| rodzaj | Znaczenie | Przykład|
+| ------------- | ------------- | ------------- |
+| int  | integer - liczba naturalna | `5` |
+| float  | liczba rzeczywista (z miejscami po przecinku)  | `5.`, `6.001`,  |
+| str  | string - słowo  | `"hello"`, `"5"` |
+| bool | wartość zerojedynkowa | `True`, `False` | 
+
 
 `bool` ma tylko dwie możliwe wartości: `True` (prawda) lub `False` (fałsz).
 
