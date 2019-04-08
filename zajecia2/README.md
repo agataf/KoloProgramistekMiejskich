@@ -34,6 +34,7 @@ b = 11
 c = [2]
 d = [2]
 e = d
+```
 | Znak | Znaczenie | Przykład (z wynikiem True) |
 | ------------- | ------------- | ------------- |
 | ==  | jest równe  | a == (b-1) |
@@ -47,7 +48,7 @@ e = d
 | is  | dwa obiekty mają to samo id | e is d |
 | is not  | dwa obiekty mają inne id  | c is not d |
 
-```
+
 
 ## if
 wyrażenie `if` sprawdza czy warunek jest prawdziwy i:
