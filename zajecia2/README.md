@@ -1,6 +1,9 @@
 # Zajęcia 2
 Na tych zajęciach nauczymy się wyrażeń logicznych i pętli w Pythonie.
 
+Dużo przydatnych informacji znajdziecie też tutaj:
+https://pl.python.org/docs/tut/node6.html
+
 ## 1. booleans (wartości zerojedynkowe)
 Na poprzednich zajęciach wspomniałyśmy o `bool` (boolean, wartość zerojedynkowa) jako jednego z typu danych 
 
@@ -56,7 +59,7 @@ f = [1,3,5]
 | or  | lub - łączenie dwóch wyrażeń  | (a == 10) or (a == 11) |
 | is in  | element znajduje się w liście/tuple  | 1 is in f |
 
-### Dodatkowe informacje - id
+### 2.1 Dodatkowe informacje - id
 id obiektu to adres w pamięci komputera przypisany do danej zmiennej.
 ```
 a = [2]
@@ -92,9 +95,12 @@ print(a is b)
 # bo 10393 to rzadko używana liczba - nie ma jej w pamięci
 ```
 
-## 2. if
+## 2. if (_jeśli_)
 wyrażenie `if` sprawdza czy warunek jest prawdziwy i:
 - jeśli warunek jest prawdziwy (ma wartość `True`), wykonywane są czynności bezpośrednio po warunku, w bloku kodu gdzie każda linia zaczyna się tabem)
+- jeśli nie jest prawdziwy, omija ten blok i zaczyna wykonywać linie kodu znajdujące się po tym bloku.
+
+Możemy po prostu użyć wartości `True` i `False` w warunku - ten kod będzie jednak zawsze działał tak samo (jego działanie nie będzie zależne od zmiany wartości innych zmiennych).
 ```
 if True:
 	print("Prawda")
@@ -104,6 +110,7 @@ if False:
 	print("Prawda")
 > 
 ```
+Częstszym użyciem `if` jest sprawdzenie wartości jakiejś zmiennej, na przykład:
 ```
 jezyk = “Python”
 
@@ -112,11 +119,61 @@ if jezyk == “Python”:
 if jezyk != “Python”:
 	print(“niepoprawny jezyk”)
 ```
+lub
+```
+wiek = 17
 
-## if-else
+if wiek >= 18:
+	print(“jesteś pełnoletnia”)
+if wiek < 18:
+	print(“nie jesteś pełnoletnia”)
+```
+## if-else (_jeśli -- w innym wypadku_)
+To wyrażenie działa podobnie do warunku `if`, ale pozwala na łączenie dwóch przeciwstawnych warunków bez konieczności pisania ich dwa razy. Powyższe przykłady możemy zapisać tak:
+```
+jezyk = “Python”
 
-## if-elif-else
+if jezyk == “Python”:
+	print(“poprawny jezyk”)
+else:
+	print(“niepoprawny jezyk”)
+```
+lub
+```
+wiek = 17
 
-## for
+if wiek >= 18:
+	print(“jesteś pełnoletnia”)
+else:
+	print(“nie jesteś pełnoletnia”)
+```
 
-## while
+## if-elif-else (_jeśli -- w innym wypadku, jeśli -- w innym wypadku_)
+To wyrażenie rozbudowuje warunek `if-else`, umożliwiając dodanie kilku rozłącznych logicznie (wzajemnie wykluczających się) warunków.
+
+Na przykład, jeśli chcemy na podstawie wieku określić, czy użytkowniczka jest małoletnia (<13 lat), niepełnoletnia (13-<18 lat) czy pełnoletnia (>=18) lat, możemy użyć wyrażenia:
+
+```
+wiek = input("podaj swój wiek\n")
+
+if wiek < 13:
+	print(“jesteś małoletnia”)
+elif wiek < 18: # już wiemy że wiek nie jest mniejszy od 13, więc `wiek >= 13` na pewno jest prawdziwe
+	print(“jesteś niepełnoletnia”)
+else: # już wiemy że `wiek >= 13` i `wiek >=18`
+	print(“jesteś pełnoletnia”)
+```
+Można używać dowolnie wiele wyrażeń `elif`, i nie ma obowiązku kończenia wyrażenia warunkiem `else`. Ważna jest jedynie, że `else`i `elif` zawsze są rozłączne logicznie wobec wszystich warunków je poprzedzających, oraz że lista warunków musi zacząć się wyrażeniem `if`.
+
+## range (_zakres_)
+Funkcja range, opisana [tutaj](https://docs.python.org/3/library/stdtypes.html#range)
+## for (_dla_)
+For to przykład, który umożliwia _iterację_ (powtórzenie zadania) dla każdego elementu jakiegoś zbioru (na przykład listy)
+
+```
+lista = [1, 2, 3, 4]
+for el in lista:
+	print(el)
+```
+
+## while (_podczas gdy_)
