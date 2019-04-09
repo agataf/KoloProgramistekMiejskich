@@ -59,7 +59,7 @@ f = [1,3,5]
 | or  | lub - łączenie dwóch wyrażeń  | (a == 10) or (a == 11) |
 | is in  | element znajduje się w liście/tuple  | 1 is in f |
 
-### 2.1 Dodatkowe informacje - id
+### 1.1 Dodatkowe informacje - id
 id obiektu to adres w pamięci komputera przypisany do danej zmiennej.
 ```python
 a = [2]
@@ -128,7 +128,7 @@ if wiek >= 18:
 if wiek < 18:
 	print(“nie jesteś pełnoletnia”)
 ```
-## if-else (_jeśli -- w innym wypadku_)
+## 3. if-else (_jeśli -- w innym wypadku_)
 To wyrażenie działa podobnie do warunku `if`, ale pozwala na łączenie dwóch przeciwstawnych warunków bez konieczności pisania ich dwa razy. Powyższe przykłady możemy zapisać tak:
 ```python
 jezyk = “Python”
@@ -148,7 +148,7 @@ else:
 	print(“nie jesteś pełnoletnia”)
 ```
 
-## if-elif-else (_jeśli -- w innym wypadku, jeśli -- w innym wypadku_)
+## 4. if-elif-else (_jeśli -- w innym wypadku, jeśli -- w innym wypadku_)
 To wyrażenie rozbudowuje warunek `if-else`, umożliwiając dodanie kilku rozłącznych logicznie (wzajemnie wykluczających się) warunków.
 
 Na przykład, jeśli chcemy na podstawie wieku określić, czy użytkowniczka jest małoletnia (<13 lat), niepełnoletnia (13-<18 lat) czy pełnoletnia (>=18) lat, możemy użyć wyrażenia:
@@ -165,7 +165,7 @@ else: # już wiemy że `wiek >= 13` i `wiek >=18`
 ```
 Można używać dowolnie wiele wyrażeń `elif`, i nie ma obowiązku kończenia wyrażenia warunkiem `else`. Ważna jest jedynie, że `else`i `elif` zawsze są rozłączne logicznie wobec wszystich warunków je poprzedzających, oraz że lista warunków musi zacząć się wyrażeniem `if`.
 
-## range (_zakres_)
+## 5. range (_zakres_)
 Funkcja range, opisana [tutaj](https://docs.python.org/3/library/stdtypes.html#range).
 ```python
 a = range(10) # zakres liczb od 0 do 9 (zakres nigdy nie zawiera najwyższej liczby)
@@ -189,7 +189,7 @@ print(c)
 > [1, 3, 5, 7, 9]
 ```
 
-## for (_dla_)
+## 6. for (_dla_)
 For to przykład, który umożliwia _iterację_ (powtórzenie zadania) dla każdego elementu jakiegoś zbioru (na przykład listy)
 
 ```python
@@ -216,7 +216,7 @@ liczba 3
 liczba 4
 ```
 
-## while (_podczas gdy_)
+## 7. while (_podczas gdy_)
 Pętla `while` wykonuje linie kodu w bloku tuż po zdaniu warunkowym, _dopóki warunek jest spełniony_. Na przykład
 
 ```python
@@ -237,7 +237,26 @@ Pętla ta jest przydatna na przykład do sprawdzenia haseł podanych przez użyt
 pin = 1234
 haslo = input("Podaj hasło\n")
 while pin != haslo:
-	print("Błędne hasło.\n")
-	haslo = input("Podaj hasło.\n") # zaktualizuj zmienną
+	print("Błędne hasło.")
+	haslo = input("Podaj hasło ponownie.\n") # zaktualizuj zmienną
+print("Hasło poprawne") # zostanie wydrukowane dopiero, gdy skońćzy się pętla while 
+			# - gdy warunek pin != haslo przestanie byc poprawny (wiec gdy prawda bedzie pin == haslo)
 ```
 Ta pętla będzie powtarzać się w nieskończoność, dopóki hasło nie będzie podane poprawnie.
+
+```
+Podaj hasło
+> 4321
+Błędne hasło.
+Podaj hasło ponownie.
+> 3982
+Błędne hasło.
+Podaj hasło ponownie.
+.
+.
+.
+Podaj hasło ponownie.
+> 1234
+Hasło poprawne.
+
+```
