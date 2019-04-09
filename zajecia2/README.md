@@ -174,7 +174,7 @@ b = range(1,10) # zakres liczb od 1 do 9
 c = range(1,10,2) # zakres liczb od 1 do 9, co 2 liczbę
 ```
 
-range() tworzy _obiekt_ zawierający liczby w danym zakresie. Aby je wydrukować, należy zmienić dany obiekt na listę.
+range() tworzy _obiekt - iterator_ zawierający liczby w danym zakresie i generujący je na żądanie . Aby je wydrukować, należy zmienić dany obiekt na listę.
 
 ```python
 a = list(range(10))
