@@ -112,40 +112,40 @@ if False:
 ```
 Częstszym użyciem `if` jest sprawdzenie wartości jakiejś zmiennej, na przykład:
 ```python
-jezyk = “Python”
+jezyk = "Python"
 
-if jezyk == “Python”:
-	print(“poprawny jezyk”)
-if jezyk != “Python”:
-	print(“niepoprawny jezyk”)
+if jezyk == "Python":
+	print("poprawny jezyk")
+if jezyk != "Python":
+	print("niepoprawny jezyk")
 ```
 lub
 ```python
 wiek = 17
 
 if wiek >= 18:
-	print(“jesteś pełnoletnia”)
+	print("jesteś pełnoletnia")
 if wiek < 18:
-	print(“nie jesteś pełnoletnia”)
+	print("nie jesteś pełnoletnia")
 ```
 ## 3. if-else (_jeśli -- w innym wypadku_)
 To wyrażenie działa podobnie do warunku `if`, ale pozwala na łączenie dwóch przeciwstawnych warunków bez konieczności pisania ich dwa razy. Powyższe przykłady możemy zapisać tak:
 ```python
-jezyk = “Python”
+jezyk = "Python"
 
-if jezyk == “Python”:
-	print(“poprawny jezyk”)
+if jezyk == "Python":
+	print("poprawny jezyk")
 else:
-	print(“niepoprawny jezyk”)
+	print("niepoprawny jezyk")
 ```
 lub
 ```python
 wiek = 17
 
 if wiek >= 18:
-	print(“jesteś pełnoletnia”)
+	print("jesteś pełnoletnia")
 else:
-	print(“nie jesteś pełnoletnia”)
+	print("nie jesteś pełnoletnia")
 ```
 
 ## 4. if-elif-else (_jeśli -- w innym wypadku, jeśli -- w innym wypadku_)
@@ -157,11 +157,11 @@ Na przykład, jeśli chcemy na podstawie wieku określić, czy użytkowniczka je
 wiek = input("podaj swój wiek\n")
 
 if wiek < 13:
-	print(“jesteś małoletnia”)
+	print("jesteś małoletnia")
 elif wiek < 18: # już wiemy że wiek nie jest mniejszy od 13, więc `wiek >= 13` na pewno jest prawdziwe
-	print(“jesteś niepełnoletnia”)
+	print("jesteś niepełnoletnia")
 else: # już wiemy że `wiek >= 13` i `wiek >=18`
-	print(“jesteś pełnoletnia”)
+	print("jesteś pełnoletnia")
 ```
 Można używać dowolnie wiele wyrażeń `elif`, i nie ma obowiązku kończenia wyrażenia warunkiem `else`. Ważna jest jedynie, że `else`i `elif` zawsze są rozłączne logicznie wobec wszystich warunków je poprzedzających, oraz że lista warunków musi zacząć się wyrażeniem `if`.
 
