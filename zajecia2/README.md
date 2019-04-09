@@ -57,7 +57,8 @@ f = [1,3,5]
 | <=  | mniejsze lub równe  | a <= 11 |
 | and | oraz - łączenie dwóch wyrażeń | (a == 10) and (b == 11) |
 | or  | lub - łączenie dwóch wyrażeń  | (a == 10) or (a == 11) |
-| is in  | element znajduje się w liście/tuple  | 1 is in f |
+| in  | element znajduje się w liście/tuple  | 1 in f |
+| not in  | element nie znajduje się w liście/tuple  | 1 not in f |
 
 ### 1.1 Dodatkowe informacje - id
 id obiektu to adres w pamięci komputera przypisany do danej zmiennej.
