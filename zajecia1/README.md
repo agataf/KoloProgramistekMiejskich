@@ -64,7 +64,20 @@ SyntaxError: invalid syntax
 - indeksowanie
 - ' '.join()
 
-## %, //, /, +, -, 
+## %, //, /, +, -,
+
+## Podsumowanie - ściąga 
+| funkcja | Znaczenie | Przykład|
+| ------------- | ------------- | ------------- |
+| print()  | drukuj | `print(5)` |
+| input()  | poproś użytkowniczkę o zmienną | `a = input("Podaj zmienną\n")`,  |
+| split()  | podziel `string` | `a = "a,b,c,d"; a.split(',')` |
+| join() | połącz elementy listy _zawierającej stringi_ w jeden `string` | `b = ['a','b', 'c']`; `','.join(b)` | 
+| type() | sprawdź typ zmiennej | `type(a)` | 
+| int() | zmień typ zmiennej na `int` | `int('5')` | 
+| float() | zmień typ zmiennej na `float` | `float('5.0')` | 
+| str() | zmień typ zmiennej na `string` | `str(1034)` | 
+| bool() | zmień typ zmiennej na `bool` | `float(0)` | 
 
 ## pamiętajcie o:
 - cudzysłowiach w stringach 
