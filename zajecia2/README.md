@@ -19,7 +19,7 @@ Na poprzednich zajęciach wspomniałyśmy o `bool` (boolean, wartość zerojedyn
 
 `bool` są przydatne, gdy próbujemy porównać wartości za pomocą równań i nierówności, np:
 
-```
+```python
 a = True
 print(type(a))
 > bool
@@ -39,7 +39,7 @@ print(d)
 ```
 
 Do porównań używamy następujących znaków:
-```
+```python
 a = 10
 b = 11
 c = [2]
@@ -61,7 +61,7 @@ f = [1,3,5]
 
 ### 2.1 Dodatkowe informacje - id
 id obiektu to adres w pamięci komputera przypisany do danej zmiennej.
-```
+```python
 a = [2]
 b = [2]
 print(a==b)
@@ -81,7 +81,7 @@ print(id(b))
 
 Może się zdarzyć wyjątek, że dwie zmienne o równych wartościach mają to samo id - bo komputer, by oszczędzić miejsce, zapisał wartość zmiennej w jednym miejscu w pamięci, i nazwy obu zmiennych wskazują na to miejsce. Jeśli chcecie poczytać więcej na ten temat, poczytajcie wikipedię: https://pl.wikipedia.org/wiki/Wska%C5%BAnik_(typ_danych)
 
-```
+```python
 a = 2
 b = 2
 print(a is b)
@@ -101,7 +101,7 @@ wyrażenie `if` sprawdza czy warunek jest prawdziwy i:
 - jeśli nie jest prawdziwy, omija ten blok i zaczyna wykonywać linie kodu znajdujące się po tym bloku.
 
 Możemy po prostu użyć wartości `True` i `False` w warunku - ten kod będzie jednak zawsze działał tak samo (jego działanie nie będzie zależne od zmiany wartości innych zmiennych).
-```
+```python
 if True:
 	print("Prawda")
 > Prawda
@@ -111,7 +111,7 @@ if False:
 > 
 ```
 Częstszym użyciem `if` jest sprawdzenie wartości jakiejś zmiennej, na przykład:
-```
+```python
 jezyk = “Python”
 
 if jezyk == “Python”:
@@ -120,7 +120,7 @@ if jezyk != “Python”:
 	print(“niepoprawny jezyk”)
 ```
 lub
-```
+```python
 wiek = 17
 
 if wiek >= 18:
@@ -130,7 +130,7 @@ if wiek < 18:
 ```
 ## if-else (_jeśli -- w innym wypadku_)
 To wyrażenie działa podobnie do warunku `if`, ale pozwala na łączenie dwóch przeciwstawnych warunków bez konieczności pisania ich dwa razy. Powyższe przykłady możemy zapisać tak:
-```
+```python
 jezyk = “Python”
 
 if jezyk == “Python”:
@@ -139,7 +139,7 @@ else:
 	print(“niepoprawny jezyk”)
 ```
 lub
-```
+```python
 wiek = 17
 
 if wiek >= 18:
@@ -153,7 +153,7 @@ To wyrażenie rozbudowuje warunek `if-else`, umożliwiając dodanie kilku rozł�
 
 Na przykład, jeśli chcemy na podstawie wieku określić, czy użytkowniczka jest małoletnia (<13 lat), niepełnoletnia (13-<18 lat) czy pełnoletnia (>=18) lat, możemy użyć wyrażenia:
 
-```
+```python
 wiek = input("podaj swój wiek\n")
 
 if wiek < 13:
@@ -166,14 +166,78 @@ else: # już wiemy że `wiek >= 13` i `wiek >=18`
 Można używać dowolnie wiele wyrażeń `elif`, i nie ma obowiązku kończenia wyrażenia warunkiem `else`. Ważna jest jedynie, że `else`i `elif` zawsze są rozłączne logicznie wobec wszystich warunków je poprzedzających, oraz że lista warunków musi zacząć się wyrażeniem `if`.
 
 ## range (_zakres_)
-Funkcja range, opisana [tutaj](https://docs.python.org/3/library/stdtypes.html#range)
+Funkcja range, opisana [tutaj](https://docs.python.org/3/library/stdtypes.html#range).
+```python
+a = range(10) # zakres liczb od 0 do 9 (zakres nigdy nie zawiera najwyższej liczby)
+b = range(1,10) # zakres liczb od 1 do 9
+c = range(1,10,2) # zakres liczb od 1 do 9, co 2 liczbę
+```
+
+range() tworzy _obiekt_ zawierający liczby w danym zakresie. Aby je wydrukować, należy zmienić dany obiekt na listę.
+
+```python
+a = list(range(10))
+print(a)
+> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+b = list(range(1,10))
+print(b)
+> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+c = list(range(1,10,2)) 
+print(c)
+> [1, 3, 5, 7, 9]
+```
+
 ## for (_dla_)
 For to przykład, który umożliwia _iterację_ (powtórzenie zadania) dla każdego elementu jakiegoś zbioru (na przykład listy)
 
-```
+```python
 lista = [1, 2, 3, 4]
-for el in lista:
+for el in lista: # el jest umowną zmienną, w którą zapisywany jest konkretny element przy danej iteracji. Może mieć dowolną nazwę.
 	print(el)
+	
+> 1
+2
+3
+4
+```
+
+Możemy używać też funkcji `range()`, aby _iterować_ przez kolejne liczby
+
+```python
+for i in range(5):
+	print("liczba", i)
+	
+> liczba 0
+liczba 1
+liczba 2
+liczba 3
+liczba 4
 ```
 
 ## while (_podczas gdy_)
+Pętla `while` wykonuje linie kodu w bloku tuż po zdaniu warunkowym, _dopóki warunek jest spełniony_. Na przykład
+
+```python
+i = 0
+while i < 4:
+	print("numer", i)
+	i += 1 # zwiększ i o 1
+	
+> numer 0
+numer 1
+numer 2
+numer 3
+```
+
+Pętla ta jest przydatna na przykład do sprawdzenia haseł podanych przez użytkownika
+
+```python
+pin = 1234
+haslo = input("Podaj hasło\n")
+while pin != haslo:
+	print("Błędne hasło.\n")
+	haslo = input("Podaj hasło.\n") # zaktualizuj zmienną
+```
+Ta pętla będzie powtarzać się w nieskończoność, dopóki hasło nie będzie podane poprawnie.
