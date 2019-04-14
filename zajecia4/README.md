@@ -75,7 +75,7 @@ Zadanie - plik `wykresy-wprowadzenie.ipynb`
 - Nie zamykaj go! (nie używaj `plt.show()` ani `plt.close()`)
 - Użyj funkcji `plt.savefig(<nazwa nowego pliku>`).
 ![Zapisz wykres](https://i.stack.imgur.com/m8HV9.png)
-- Użyj `plt.show()`/`plt.close().
+- Użyj `plt.show()`/`plt.close()`.
 
 ## 5. Praca z plikami
 
