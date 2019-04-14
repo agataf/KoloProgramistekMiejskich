@@ -24,10 +24,18 @@ w Macu:
 - Żeby stworzyć nowy plik, kliknij "New" po prawej stronie, i wybierz "Python"
 ![Nowy plik](https://jupyter-notebook.readthedocs.io/en/stable/_images/dashboard_files_tab_new.png)
 
+
+## Praca na zajęciach
+Na te zajęcia przygotowałam Jupyter Notebooks do wypełnienia przez Was (wypełnione notebooki znajdują się w folderze `rozwiązania`). Możesz ściągnąć cały folder `do_pobrania.zip`, wyodrębnić pliki (klikając prawym klawiszem po ściągnięciu), i otworzyć plik `funkcje.ipynb` w opisany powyżej sposób.
+
 ## 2. Powtórzenie funkcji
-Ściągnij plik `funkcje.ipynb` powyżej. Możesz ściągnąć cały folder `do_pobrania.zip`, wyodrębnić pliki (klikając prawym klawiszem po ściągnięciu), i otworzyć plik `funkcje.ipynb` w opisany powyżej sposób.
+
+Zadanie - plik `funkcje.ipynb`
 
 ## 3. Biblioteki
+
+Zadanie - plik `biblioteki.ipynb`
+
 Biblioteki w Pythonie to zbiory funkcji napisanych przez inne osoby, których możemy używać bez konieczności implementowania rozwiązań samym. Aby użyć biblioteki (np. biblioteki `math`), należy ją najpierw zaimportować, pisząc
 ```
 import math
@@ -60,6 +68,8 @@ import pandas as pd
 
 ## 4. Wykresy
 
+Zadanie - plik `wykresy-wprowadzenie.ipynb`
+
 ### 4.1 Zapisywanie stworzonych wykresów
 - Stwórz wykres
 - Nie zamykaj go! (nie używaj `plt.show()` ani `plt.close()`)
@@ -68,6 +78,8 @@ import pandas as pd
 - Użyj `plt.show()`/`plt.close().
 
 ## 5. Praca z plikami
+
+Zadanie - plik `zajecia-wykresy.ipynb`
 
 ### 5.1 Ładowanie pliku csv do zmiennej:
 
