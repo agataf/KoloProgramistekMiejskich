@@ -28,6 +28,35 @@ w Macu:
 Ściągnij plik `funkcje.ipynb` powyżej. Możesz ściągnąć cały folder `do_pobrania.zip`, wyodrębnić pliki (klikając prawym klawiszem po ściągnięciu), i otworzyć plik `funkcje.ipynb` w opisany powyżej sposób.
 
 ## 3. Biblioteki
+Biblioteki w Pythonie to zbiory funkcji napisanych przez inne osoby, których możemy używać bez konieczności implementowania rozwiązań samym. Aby użyć biblioteki (np. biblioteki `math`), należy ją najpierw zaimportować, pisząc
+```
+import math
+```
+Kiedy chcemy użyć jakiejś funkcji z biblioteki, używamy formy `<nazwa biblioteki>.<nazwa funkcji>(<argumenty funkcji>)`, na przykład:
+```
+a = math.pow(2,8) # funkcja pow podnosi pierwszy argument do potęgi podanej w drugim argumencie
+print(a)
+> 256.0
+```
+Dokumentację dotyczącą konkretnych funkcji możemy bez problemu znaleźć w internecie, wpisując w google zapytania typu "python math library function power".
+
+Biblioteki, których będziemy używać na tych zajęciach, to
+- math (podstawowa biblioteka do działań matematycznych)
+- random (biblioteka do generowania liczb losowych)
+- pyplot (biblioteka do rysowania wykresów)
+- pandas (biblioteka do operacji na tabelach danych)
+
+Aby poznać bibliotekę, warto czasem przerobić tutoriale publikowane na stronie twórców bibliotek:
+- [Tutorial Pyplot](https://matplotlib.org/users/pyplot_tutorial.html)
+- [Tutorial Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html#min)
+- [Inny tutorial Pandas](https://data36.com/pandas-tutorial-1-basics-reading-data-files-dataframes-data-selection/)
+
+```
+import math
+import random
+import matplotlib.pyplot as plt
+import pandas as pd
+```
 
 ## 4. Wykresy
 
