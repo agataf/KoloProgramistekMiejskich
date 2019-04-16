@@ -1,8 +1,12 @@
 # Zajęcia 2
 
-[1. Repl.it](#repl.it))
+[1. Repl.it](#repl.it)
 
-[2. Twój pierwszy program](#twój-pierwszy-program))
+[2. Twój pierwszy program](#twój-pierwszy-program)
+
+[3. Komentarze](#komentarze)
+
+[4. Komentarze](#zmienne)
 
 ## Repl.it
 Przez pierwsze kilka zajęć będziemy używać strony repl.it do naszych programów. Strona ta umożliwia używanie pythona w przeglądarce, bez potrzeby ściągania żadnych programów.
@@ -29,7 +33,7 @@ print(Hello World!)
                     ^
 SyntaxError: invalid syntax
 ```
-## 3. Komentarze
+## Komentarze
 ```python
 # Jeżeli na początku linijki podamy kratkę
 # Możemy napisać tam cokolwiek
@@ -42,7 +46,7 @@ SyntaxError: invalid syntax
 ```
 
 
-## 4. Zmienne
+## Zmienne
 
 | rodzaj | Znaczenie | Przykład|
 | ------------- | ------------- | ------------- |
