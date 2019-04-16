@@ -193,6 +193,16 @@ TypeError: Can't convert 'int' object to str implicitly
     
     print(wynik2)
     ```
+- Mnożenie
+  Mnożenie stringów po prostu powiela je odpowiednią ilość razy:
+  
+  ```python
+  moj_string = "Jestem Agata"
+  dlugi_string = moj_string * 10
+  print(dlugi_string)
+  > Jestem AgataJestem AgataJestem AgataJestem AgataJestem AgataJestem AgataJestem AgataJestem AgataJestem AgataJestem Agata
+  ```
+
 - Dzielenie
 
   Możemy też dzielić stringi używając funkcji `split()`:
@@ -273,10 +283,31 @@ print(type(d))
 ```
 
 ### 4.5 Zmiana typu zmiennych
-Czasem chcemy potraktować zmienną int jako string, by móc ją wydrukować, lub inta zapisanego w stringu, by móc wykonywać na nim działania. W tym celu możemy użyć funkcji zmieniającej typ zmiennych:
+Nie możemy wykonywać operacji na zmiennych, których typy się nie zgadzają (możemy robić działania na intach i floatach, ale nie na intach i stringach)
 ```python
-
+a = "5"
+b = 6
+print(a + b)
+> TypeError: Can't convert 'int' object to str implicitly
 ```
+
+Jeśli chcemy potraktować zmienną `a` jako liczbę, możemy użyć funkcji `int()`, która zmienia jej typ na `int`
+```python
+a = "5"
+b = 6
+print(int(a) + b)
+> 11
+```
+
+Jeśli chcemy potraktować zmienną `a` jako string, możemy użyć funkcji `str()`, która zmienia jej typ na `str`
+
+```python
+a = "5"
+b = 6
+print(a + str(b))
+> 56
+```
+Zauważmy, że 56 to nie wynik dodawania, tylko wynik "doklejenia" `a` i `b`
 
 ## 5. Listy
 
