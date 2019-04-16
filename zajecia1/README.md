@@ -8,7 +8,7 @@
 
 [3. Komentarze](#3-komentarze)
 
-[4. Komentarze](#4-zmienne)
+[4. Zmienne](#4-zmienne)
 
 [5. Listy](#5-listy)
 
