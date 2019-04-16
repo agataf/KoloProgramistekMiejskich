@@ -1,12 +1,16 @@
 # Zajęcia 2
 
-[1. Repl.it](#1-repl.it)
+[1. Repl.it](#1-replit)
 
-[2. Twój pierwszy program](#twój-pierwszy-program)
+[2. Twój pierwszy program](#2-twój-pierwszy-program)
 
-[3. Komentarze](#komentarze)
+[3. Komentarze](#3-komentarze)
 
-[4. Komentarze](#zmienne)
+[4. Komentarze](#4-zmienne)
+
+[5. Listy](#5-listy)
+
+[6. Input](#6-input)
 
 ## 1. Repl.it
 Przez pierwsze kilka zajęć będziemy używać strony repl.it do naszych programów. Strona ta umożliwia używanie pythona w przeglądarce, bez potrzeby ściągania żadnych programów.
@@ -15,7 +19,7 @@ Zanim zaczniemy, załóżcie konta na repl.it, żeby móc zapisać swój kod.
 
 Aby otworzyć nowy plik, kliknijcie przycisk "new repl" w prawym górnym rogu, i wybierzcie Python z listy języków.
 
-## Twój pierwszy program
+## 2. Twój pierwszy program
 ```python
 print(“Hello World!”)
 > Hello World!
@@ -33,7 +37,7 @@ print(Hello World!)
                     ^
 SyntaxError: invalid syntax
 ```
-## Komentarze
+## 3. Komentarze
 ```python
 # Jeżeli na początku linijki podamy kratkę
 # Możemy napisać tam cokolwiek
@@ -46,7 +50,7 @@ SyntaxError: invalid syntax
 ```
 
 
-## Zmienne
+## 4. Zmienne
 
 | rodzaj | Znaczenie | Przykład|
 | ------------- | ------------- | ------------- |
@@ -166,15 +170,29 @@ TypeError: Can't convert 'int' object to str implicitly
     print(a + " " + b)
     > Jestem Agata
     ```
-    Możemy też użyć funkcji join, gdzie pierwszy znak staje się znakiem łączącym stringi podane w nawiasie
+    Możemy też użyć funkcji join, gdzie pierwszy znak staje się znakiem łączącym stringi podane w liście (`[...]`) nawiasie (listy opisujemy [poniżej](#5-listy)
     ```python
-    print( ' '.join(a,b) )
+    print( ' '.join([a,b]) )
     > Jestem Agata
     
-    print( '-'.join(a,b) )
+    print( '-'.join([a,b]) )
     > Jestem-Agata
     ```
 
+    Jeśli chcemy połączyć stringi z liczbami (`int` lub `float`), należy użyć funkcji `str()` (opisanej [tutaj](#45-zmiana-typu-zmiennych)
+    ```python
+    a = "Mam"
+    b = 15
+    c = "lat"
+    
+    wynik1 = a + " " + str(b) + " " + c
+    wynik2 = ' '.join([a, str(b), c])
+    
+    print(wynik1)
+    > Jestem-Agata
+    
+    print(wynik2)
+    ```
 - Dzielenie
 
   Możemy też dzielić stringi używając funkcji `split()`:
@@ -189,10 +207,25 @@ TypeError: Can't convert 'int' object to str implicitly
   print(a.split(', '))
   > ['Ada Lovelace  – brytyjska matematyczka i poetka', ' znana przede wszystkim z publikacji na temat mechanicznego komputera Charlesa Babbage’a', ' zwanego maszyną analityczną.']
   ```
-  Wynikiem takiego podziału jest lista (omówiona w punkcie 6).
-
+  Wynikiem takiego podziału jest lista (omówiona [tutaj](#5-listy)).
 
 - Indeksowanie
+  Aby wybrać konkretny znak w stringu, wystarczy podać jego indeks w kwadratowym nawiasie (liczenie zaczynamy od 0!)
+  ```python
+  litery = "abcdefgh"
+  print(litery[0])
+  > a
+  print(litery[5])
+  > f
+  ```
+  Możemy też wydrukować pewną cząstkę (_slice_) stringa, `string[pierwszy element:ostatni element +1]`:
+  ```python
+  
+  ```
+
+- Odwracanie stringa
+
+- len()
 
 
 ### 4.4 type()
@@ -217,13 +250,13 @@ print(type(d))
 
 ### 4.5 Zmiana typu zmiennych
 
-## 5. input()
+## 5. Listy
 
-## 6. Listy
-
-### 6.1 Tworzenie list
+### 5.1 Tworzenie list
 - indeksowanie
 - ' '.join()
+
+## 6. input()
 
 ## Operacje na intach i floatach
 | operacja | Znaczenie | Przykład|
