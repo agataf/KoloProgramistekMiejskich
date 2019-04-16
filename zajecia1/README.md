@@ -15,7 +15,7 @@ print(“Hello World!”)
 Żeby włączyć program, naciśnijcie przycisk start. Aby go zatrzymać, naciśnijcie stop.
 ![Start-stop](http://pythonic.zoomquiet.top/data/20161110214330/jetfwr4.gif)
 
-cudzysłowia są bardzo ważne! Jeśli spróbujemy zrobić to samo bez cudzysłowia, program zwróci nam błąd `invalid syntax` (niepoprawna składnia)
+cudzysłowy są bardzo ważne! Jeśli spróbujemy zrobić to samo bez cudzysłowu, program zwróci nam błąd `invalid syntax` (niepoprawna składnia)
 
 ```
 print(Hello World!)
