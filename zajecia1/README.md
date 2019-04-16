@@ -197,7 +197,6 @@ print(type(d))
 - ' '.join()
 
 ## Operacje na intach i floatach
-%, //, /, +, -,
 | operacja | Znaczenie | Przykład|
 | ------------- | ------------- | ------------- |
 | +  | dodaj | `6.0 + 10` --> `16.0` |
