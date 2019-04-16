@@ -340,7 +340,21 @@ print("Podałaś znaki " + przyjete)
 > Podałaś znaki jefdsjkz
 ```
 
+Przykład w repl.it:
+
 ![Przykład](https://i.vimeocdn.com/video/624594498.webp?mw=1100&mh=702&q=70)
+
+**Uwaga!** Znaki wprowadzone przez użytkownika _**zawsze zostają przyjęte jako zmienne typu string**_. Jeśli prosimy użytkownika o liczbę, i chcemy wykonywać na niej obliczenia, musimy zmienić typ przyjętej zmiennej na `int` lub `float`:
+```python
+wiek = input("Ile masz lat?\n")
+rok_urodzenia = 2019 - int(wiek)
+```
+Pamiętaj też, że aby wydrukować później obliczoną liczbę jako wynik w `print`, musimy z powrotem zmienić jej typ na `str`:
+```python
+print("Urodziłaś się w " + str(rok_urodzenia))
+```
+
+# Podsumowanie:
 
 ## Operacje na intach i floatach
 | operacja | Znaczenie | Przykład|
@@ -354,7 +368,7 @@ print("Podałaś znaki " + przyjete)
 | // | dzielenie do całości | `10 // 6.0` --> `1.0` | 
 
 
-## Podsumowanie - ściąga 
+## Ściąga
 | funkcja | Znaczenie | Przykład|
 | ------------- | ------------- | ------------- |
 | print()  | drukuj | `print(5)` |
