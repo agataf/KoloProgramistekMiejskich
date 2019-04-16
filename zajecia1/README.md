@@ -194,6 +194,7 @@ TypeError: Can't convert 'int' object to str implicitly
     print(wynik2)
     ```
 - Mnożenie
+
   Mnożenie stringów po prostu powiela je odpowiednią ilość razy:
   
   ```python
@@ -220,6 +221,7 @@ TypeError: Can't convert 'int' object to str implicitly
   Wynikiem takiego podziału jest lista (omówiona [tutaj](#5-listy)).
 
 - Indeksowanie
+
   Aby wybrać konkretny znak w stringu, wystarczy podać jego indeks w kwadratowym nawiasie (liczenie zaczynamy od 0!)
   ```python
   litery = "abcdefgh"
@@ -239,6 +241,7 @@ TypeError: Can't convert 'int' object to str implicitly
   Zauważ, że piąty element nie jest wydrukowany! W zakresie podajemy cyfrę o jeden większą od indeksu ostatniego znaku, który chcemy wydrukować.
 
 - Odwracanie stringa
+
   Są dwa sposoby na odwrócenie stringa. Pierwszy to użycie indeksów:
   ```python
   litery = "abcdefgh"
@@ -316,6 +319,28 @@ Zauważmy, że 56 to nie wynik dodawania, tylko wynik "doklejenia" `a` i `b`
 - ' '.join()
 
 ## 6. input()
+Funkcja `input()` pozwala na przyjęcie zmiennych od użytkownika. W nawiasach możemy podać `string`, którego treść zostanie wydrukowana i pokazana użytkownikowi. Znaki wpisane przez użytkownika to wartość zwracana przez funkcję (zapisywana do zmiennej `przyjete`):
+```python
+przyjete = input("Podaj jakieś znaki\n")
+```
+Warto zakończyć string znakiem nowej linii, aby kursor proszący użytkownika o odpowiedź pokazał się w nowej linii.
+
+W oknie użytkownika (Terminalu) ukaże się wtedy wiadomość
+```
+Podaj jakieś znaki
+>
+```
+Gdy wpiszemy odpowiedź "jefdsjkz", zmienna przyjete przyjmie tę wartość:
+```
+Podaj jakieś znaki
+> jefdsjkz
+```
+```python
+print("Podałaś znaki " + przyjete)
+> Podałaś znaki jefdsjkz
+```
+
+![Przykład](https://i.vimeocdn.com/video/624594498.webp?mw=1100&mh=702&q=70)
 
 ## Operacje na intach i floatach
 | operacja | Znaczenie | Przykład|
@@ -343,14 +368,14 @@ Zauważmy, że 56 to nie wynik dodawania, tylko wynik "doklejenia" `a` i `b`
 | str() | zmień typ zmiennej na `string` | `str(1034)` | 
 | bool() | zmień typ zmiennej na `bool` | `float(0)` | 
 
-## pamiętajcie o:
-- cudzysłowach w stringach 
+## pamiętajcie:
+- o cudzysłowach w stringach 
   ```python
   print("cześć")
   #nie 
   # print(cześć)
   ```
-- zmienne przychodzące z input() zawsze są stringami - jeśli chcecie używać ich jako intów lub floatów, użyjcie funkcji int() lub float()
+- zmienne przychodzące z `input()` zawsze są stringami - jeśli chcecie używać ich jako intów lub floatów, użyjcie funkcji `int()` lub `float()`
 
   ```python
   wiek = input("Podaj wiek\n")
