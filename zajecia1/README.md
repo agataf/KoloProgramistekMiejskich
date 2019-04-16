@@ -1,4 +1,10 @@
 # Zajęcia 2
+## Spis treści
+[1. Repl.it](#1.-repl.it)
+[2. Twój pierwszy program](#2.-twój-pierwszy-program)
+[3. Komentarze](#3.-komentarze)
+[4. Zmienne](#3.-zmienne)
+
 
 ## 1. Repl.it
 Przez pierwsze kilka zajęć będziemy używać strony repl.it do naszych programów. Strona ta umożliwia używanie pythona w przeglądarce, bez potrzeby ściągania żadnych programów.
