@@ -1,19 +1,22 @@
 # Zajęcia 2
 ## Spis treści
 [1. Repl.it](#1.-repl.it)
+
 [2. Twój pierwszy program](#2.-twój-pierwszy-program)
+
 [3. Komentarze](#3.-komentarze)
+
 [4. Zmienne](#3.-zmienne)
 
 
-## 1. Repl.it
+##1. Repl.it
 Przez pierwsze kilka zajęć będziemy używać strony repl.it do naszych programów. Strona ta umożliwia używanie pythona w przeglądarce, bez potrzeby ściągania żadnych programów.
 
 Zanim zaczniemy, załóżcie konta na repl.it, żeby móc zapisać swój kod.
 
 Aby otworzyć nowy plik, kliknijcie przycisk "new repl" w prawym górnym rogu, i wybierzcie Python z listy języków.
 
-## 2. Twój pierwszy program
+##2. Twój pierwszy program
 ```python
 print(“Hello World!”)
 > Hello World!
@@ -31,7 +34,7 @@ print(Hello World!)
                     ^
 SyntaxError: invalid syntax
 ```
-## 3. Komentarze
+##3. Komentarze
 ```python
 # Jeżeli na początku linijki podamy kratkę
 # Możemy napisać tam cokolwiek
