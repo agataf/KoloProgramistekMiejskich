@@ -1,4 +1,4 @@
-# Zajęcia 2
+# Zajęcia 1
 
 [1. Repl.it](#1-replit)
 
@@ -217,16 +217,41 @@ TypeError: Can't convert 'int' object to str implicitly
   > a
   print(litery[5])
   > f
+  print(litery[-1])
   ```
+  Możemy podawać też indeksy od końca, używając minusa. Wtedy liczenie zaczynamy od `-1` (bo nie istnieje `-0`!)
+  
   Możemy też wydrukować pewną cząstkę (_slice_) stringa, `string[pierwszy element:ostatni element +1]`:
   ```python
-  
+  print(litery[0:5])
+  > abcde
   ```
+  Zauważ, że piąty element nie jest wydrukowany! W zakresie podajemy cyfrę o jeden większą od indeksu ostatniego znaku, który chcemy wydrukować.
 
 - Odwracanie stringa
-
+  Są dwa sposoby na odwrócenie stringa. Pierwszy to użycie indeksów:
+  ```python
+  litery = "abcdefgh"
+  litery_odwrocone = litery[::-1]
+  print(litery_odwrocone)
+  > hgfedcba
+  ```
+  Drugi to funkcja `reverse()`
+  ```python
+  litery = "abcdefgh"
+  litery.reverse()
+  print(litery)
+  > hgfedcba
+  ```
+  **Uwaga!** Funkcja `reverse()` to tak zwana "funkcja w miejscu" - nie należy zapisywać jej wyniku do żadnej zmiennej, zmienia ona obiekt `litery` od razu.
+  
 - len()
-
+  Aby sprawdzić długość stringa, możemy użyć funkcji `len()`:
+  ```python
+  litery = "abcdefgh"
+  print(len(litery))
+  > 8
+  ```
 
 ### 4.4 type()
 Możemy sprawdzić typ zmiennej używając funkcji `type()`
@@ -247,8 +272,11 @@ print(type(d))
 > <class 'list'>
 ```
 
-
 ### 4.5 Zmiana typu zmiennych
+Czasem chcemy potraktować zmienną int jako string, by móc ją wydrukować, lub inta zapisanego w stringu, by móc wykonywać na nim działania. W tym celu możemy użyć funkcji zmieniającej typ zmiennych:
+```python
+
+```
 
 ## 5. Listy
 
@@ -277,6 +305,7 @@ print(type(d))
 | input()  | poproś użytkowniczkę o zmienną | `a = input("Podaj zmienną\n")`,  |
 | split()  | podziel `string` | `a = "a,b,c,d"; a.split(',')` |
 | join() | połącz elementy listy _zawierającej stringi_ w jeden `string` | `b = ['a','b', 'c']`; `','.join(b)` | 
+| reverse() | odwróć `string` w miejscu | `a = "Hejka"`; `a.reverse()` | 
 | type() | sprawdź typ zmiennej | `type(a)` | 
 | int() | zmień typ zmiennej na `int` | `int('5')` | 
 | float() | zmień typ zmiennej na `float` | `float('5.0')` | 
