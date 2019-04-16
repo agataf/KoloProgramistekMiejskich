@@ -29,7 +29,7 @@ print(“Hello World!”)
 
 cudzysłowy są bardzo ważne! Jeśli spróbujemy zrobić to samo bez cudzysłowu, program zwróci nam błąd `invalid syntax` (niepoprawna składnia)
 
-```
+```python
 print(Hello World!)
 
 >  File "<ipython-input-46-734633aabfd1>", line 1
