@@ -198,9 +198,16 @@ print(type(d))
 
 ## Operacje na intach i floatach
 %, //, /, +, -,
+| operacja | Znaczenie | Przykład|
+| ------------- | ------------- | ------------- |
+| +  | dodaj | `6.0 + 10` --> `16.0` |
+| - | odejmij | `6.0 - 10` --> `4.0` |
+| *  | pomnóż | `6.0 * 10` --> `60.0`|
+| / | podziel | `6.0 / 10` --> `0.6`| 
+| ** | podnieś do potęgi | `6.0 ** 10` --> `60466176.0` | 
+| % | reszta z dzielenia | `10 % 6.0` --> `4.0` | 
+| // | dzielenie do całości | `10 // 6.0` --> `1.0` | 
 
-
-### My Multi Word Header
 
 ## Podsumowanie - ściąga 
 | funkcja | Znaczenie | Przykład|
