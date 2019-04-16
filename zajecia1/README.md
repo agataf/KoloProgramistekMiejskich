@@ -26,7 +26,7 @@ print(Hello World!)
 SyntaxError: invalid syntax
 ```
 ## 3. Komentarze
-```
+```python
 # Jeżeli na początku linijki podamy kratkę
 # Możemy napisać tam cokolwiek
 # Jest to bardzo przydatne do opisywania swoich programów
@@ -51,7 +51,7 @@ SyntaxError: invalid syntax
 
 ### 4.0 Zapisywanie zmiennych w Pythonie
 Każdy typ zmiennej możemy zapisać w Pythonie tak jak zmienne w matematyce - przypisując wartość po prawej stronie nawiasu, i nazwę zmiennej po lewej:
-```
+```python
 mojaZmienna = 5
 zmienna_1 = "Mój string"
 c = 8.5
@@ -66,8 +66,8 @@ print(c)
 Nazwy zmiennych mogą być dowolne, jednak **nie mogą zaczynać się cyfrą** (np. `1zmienna`).
 
 ### 4.1 Int
-Int (Integer, liczba całkowita, czyli inaczej każda liczba bez ułamka) to jeden z najprostszych typów danych w pythonie. Inty możemy wykorzystywać do robienia obliczeń, jak w kalkulatorze:
-```
+Int (Integer, liczba całkowita, czyli inaczej każda liczba bez ułamka) to jeden z najprostszych typów danych w pythonie. Inty możemy wykorzystywać do robienia obliczeń, jak w kalkulatorze (pełna lista operacji znajduje się [tutaj](#operacje-na-intach-i-floatach)):
+```python
 a = 5 + 6
 print(a)
 > 11
@@ -79,7 +79,7 @@ print(c)
 ```
 ### 4.2 Float
 Float (z angielskiego _floating point number_) to zmienne, które zawierają część "po przecinku" (może ona wynosić 0).
-```
+```python
 a = 5.0
 b = 1.1
 
@@ -87,14 +87,14 @@ print(a+b)
 > 6.1
 ```
 W naszej wersji Pythona (3.x) wynikiem dzielenia dwóch intów będzie zawsze float:
-```
+```python
 a = 7
 b = 2
 print(a/b)
 > 3.5
 ```
 Wynikiem operacji na incie i floacie zawsze będzie float:
-```
+```python
 a = 5.0
 b = 6
 print(a*b)
@@ -103,7 +103,7 @@ print(a*b)
 
 ### 4.3 String 
 String (inaczej Napis) to typ zmiennej który jest traktowany jako słowo/zdanie. Aby stworzyć zmienną typu string, należy zapisać ją w cudzysłowiach (pojedynczych lub podwójnych).
-```
+```python
 a = "Hello" # zapisujemy 
 b = 'Hello'
 print(a)
@@ -113,7 +113,7 @@ print(b)
 ```
 #### 4.3.1 Typy cudzysłowów
 Aby w stringu znajdowały się cudzysłowia, należy użyć jednego typu cudzysłowów na zewnątrz i drugiego w środku:
-```
+```python
 a = "Mój ulubiony film to 'Titanic'"
 print(a)
 > Mój ulubiony film to 'Titanic'
@@ -135,7 +135,7 @@ W ostatnim przypadku widzimy, że pojawia się błąd "SyntaxError" - błąd sk�
 
 #### 4.3.2 Liczby w stringach
 Uwaga! Liczby zapisane w cudzysłowach są traktowane jako stringi, nie jako liczby - nie można ich np. dodawać. Jeśli próbujemy to zrobić, dostaniemy błąd `TypeError`.
-```
+```python
 a = "5"
 b = 6
 print(a+b)
@@ -146,7 +146,7 @@ TypeError: Can't convert 'int' object to str implicitly
 ```
 #### 4.3.3 Operacje na stringach
 Dodawanie
-```
+```python
 a + b
 a + " " + b
 ' '.join(a,b)
@@ -169,7 +169,7 @@ Aby w stringu
 ### 4.5 type()
 Możemy sprawdzić typ zmiennej używając funkcji `type()`
 
-```
+```python
 a = 5
 b = 5.0
 c = "5"
@@ -196,7 +196,11 @@ print(type(d))
 - indeksowanie
 - ' '.join()
 
-## %, //, /, +, -,
+## Operacje na intach i floatach
+%, //, /, +, -,
+
+
+### My Multi Word Header
 
 ## Podsumowanie - ściąga 
 | funkcja | Znaczenie | Przykład|
@@ -212,26 +216,26 @@ print(type(d))
 | bool() | zmień typ zmiennej na `bool` | `float(0)` | 
 
 ## pamiętajcie o:
-- cudzysłowiach w stringach 
-  ```
+- cudzysłowach w stringach 
+  ```python
   print("cześć")
   #nie 
   # print(cześć)
   ```
 - zmienne przychodzące z input() zawsze są stringami - jeśli chcecie używać ich jako intów lub floatów, użyjcie funkcji int() lub float()
 
-  ```
+  ```python
   wiek = input("Podaj wiek\n")
   rok_urodzenia = 2019 - int(wiek)
   ```
 - można drukować na dwa sposoby: 
   - dodając kolejne zmienne po przecinku - wtedy nie musisz się przejmować zmianą wszystkich zmiennych na stringi. Funkcja dodaje też wtedy automatycznie spacje pomiędzy kolejnymi elementami.
-  ```
+  ```python
   wiek = 17
   print("Masz", wiek, "lat.")
   ```
   - tworząc nowy string znakiem `+` - wtedy wszystkie elementy dodawane muszą być stringiem, i trzeba pamiętać o spacjach:
-  ```
+  ```python
   wiek = 17
   print("Masz " +  str(wiek) + " lat.")
   ```
