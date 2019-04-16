@@ -8,7 +8,7 @@ Zanim zaczniemy, załóżcie konta na repl.it, żeby móc zapisać swój kod.
 Aby otworzyć nowy plik, kliknijcie przycisk "new repl" w prawym górnym rogu, i wybierzcie Python z listy języków.
 
 ## 2. Twój pierwszy program
-```
+```python
 print(“Hello World!”)
 > Hello World!
 ```
