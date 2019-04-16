@@ -140,12 +140,11 @@ a = "5"
 b = 6
 print(a+b)
 > 
-----> print(a+b)
-
 TypeError: Can't convert 'int' object to str implicitly
 ```
 #### 4.3.3 Operacje na stringach
 - Dodawanie
+
   Stringi można dodawać na dwa sposoby: używając znaku `+`, lub funkcji `join()`:
   
     ```python
@@ -169,6 +168,7 @@ TypeError: Can't convert 'int' object to str implicitly
     ```
 
 - Dzielenie
+
   Możemy też dzielić stringi używając funkcji `split()`:
   
   ```python
@@ -183,15 +183,11 @@ TypeError: Can't convert 'int' object to str implicitly
   ```
   Wynikiem takiego podziału jest lista (omówiona w punkcie 6).
 
+
 - Indeksowanie
 
 
-
-
-
-### 4.4 Nazywanie zmiennych
-
-### 4.5 type()
+### 4.4 type()
 Możemy sprawdzić typ zmiennej używając funkcji `type()`
 
 ```python
@@ -211,7 +207,7 @@ print(type(d))
 ```
 
 
-### 4.6 Zmiana typu zmiennych
+### 4.5 Zmiana typu zmiennych
 
 ## 5. input()
 
