@@ -25,7 +25,7 @@ print(Hello World!)
                     ^
 SyntaxError: invalid syntax
 ```
-##3. Komentarze
+## 3. Komentarze
 ```python
 # Jeżeli na początku linijki podamy kratkę
 # Możemy napisać tam cokolwiek
