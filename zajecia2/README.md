@@ -206,15 +206,21 @@ print(c)
 ## 6. for (_dla_)
 For to przykład, który umożliwia _iterację_ (powtórzenie zadania) dla każdego elementu jakiegoś zbioru (na przykład listy)
 
+Dla każdego elementu listy, pętla for wykonuje blok kodu bezpośrednio po niej następujący.
 ```python
-lista = [1, 2, 3, 4]
+lista = ["a", "b", "c", "d"]
 for el in lista: # el jest umowną zmienną, w którą zapisywany jest konkretny element przy danej iteracji. Może mieć dowolną nazwę.
 	print(el)
+	print("Jestem tutaj", el)
 	
-> 1
-2
-3
-4
+> a
+Jestem tutaj a
+b
+Jestem tutaj b
+c
+Jestem tutaj c
+d
+Jestem tutaj d
 ```
 
 Możemy używać też funkcji `range()`, aby _iterować_ przez kolejne liczby
