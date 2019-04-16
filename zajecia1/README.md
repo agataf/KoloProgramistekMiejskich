@@ -1,13 +1,16 @@
 # Zajęcia 2
 
-## 1. Repl.it
+[1. Repl.it](#repl.it))
+[2. Twój pierwszy program](#twoj-pierwszy-program))
+
+## Repl.it
 Przez pierwsze kilka zajęć będziemy używać strony repl.it do naszych programów. Strona ta umożliwia używanie pythona w przeglądarce, bez potrzeby ściągania żadnych programów.
 
 Zanim zaczniemy, załóżcie konta na repl.it, żeby móc zapisać swój kod.
 
 Aby otworzyć nowy plik, kliknijcie przycisk "new repl" w prawym górnym rogu, i wybierzcie Python z listy języków.
 
-## 2. Twój pierwszy program
+## Twój pierwszy program
 ```python
 print(“Hello World!”)
 > Hello World!
