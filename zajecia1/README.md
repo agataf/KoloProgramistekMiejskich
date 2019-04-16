@@ -1,5 +1,7 @@
 # Zajęcia 1
 
+Spis treści:
+
 [1. Repl.it](#1-replit)
 
 [2. Twój pierwszy program](#2-twój-pierwszy-program)
