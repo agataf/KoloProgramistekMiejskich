@@ -1,22 +1,13 @@
 # Zajęcia 2
-## Spis treści
-[1. Repl.it](#1.-repl.it)
 
-[2. Twój pierwszy program](#2.-twój-pierwszy-program)
-
-[3. Komentarze](#3.-komentarze)
-
-[4. Zmienne](#3.-zmienne)
-
-
-##1. Repl.it
+## 1. Repl.it
 Przez pierwsze kilka zajęć będziemy używać strony repl.it do naszych programów. Strona ta umożliwia używanie pythona w przeglądarce, bez potrzeby ściągania żadnych programów.
 
 Zanim zaczniemy, załóżcie konta na repl.it, żeby móc zapisać swój kod.
 
 Aby otworzyć nowy plik, kliknijcie przycisk "new repl" w prawym górnym rogu, i wybierzcie Python z listy języków.
 
-##2. Twój pierwszy program
+## 2. Twój pierwszy program
 ```python
 print(“Hello World!”)
 > Hello World!
@@ -154,20 +145,45 @@ print(a+b)
 TypeError: Can't convert 'int' object to str implicitly
 ```
 #### 4.3.3 Operacje na stringach
-Dodawanie
-```python
-a + b
-a + " " + b
-' '.join(a,b)
-```
+- Dodawanie
+  Stringi można dodawać na dwa sposoby: używając znaku `+`, lub funkcji `join()`:
+  
+    ```python
+    a = "Jestem"
+    b = "Agata"
+    print(a + b)
+    > JestemAgata
+    ```
+    Zauważmy, że między naszymi zmiennymi nie ma spacji. Możemy ją dodać po prostu kolejnym plusem
+    ```python
+    print(a + " " + b)
+    > Jestem Agata
+    ```
+    Możemy też użyć funkcji join, gdzie pierwszy znak staje się znakiem łączącym stringi podane w nawiasie
+    ```python
+    print( ' '.join(a,b) )
+    > Jestem Agata
+    
+    print( '-'.join(a,b) )
+    > Jestem-Agata
+    ```
 
+- Dzielenie
+  Możemy też dzielić stringi używając funkcji `split()`:
+  
+  ```python
+  a = "Ada Lovelace  – brytyjska matematyczka i poetka, znana przede wszystkim z publikacji na temat mechanicznego komputera Charlesa Babbage’a, zwanego maszyną analityczną."
+  print(a.split(' '))
+  > ['Ada', 'Lovelace', '', '–', 'brytyjska', 'matematyczka', 'i', 'poetka,', 'znana', 'przede', 'wszystkim', 'z', 'publikacji', 'na', 'temat', 'mechanicznego', 'komputera', 'Charlesa', 'Babbage’a,', 'zwanego', 'maszyną', 'analityczną.']
+  ```
+  Tutaj podzieliłyśmy string używając spacji jako znaku oddzielającego kolejne części. Możemy w to miejsce użyć dowolnego stringa - na przykład przedcinka ze spacją
+  ```python
+  print(a.split(', '))
+  > ['Ada Lovelace  – brytyjska matematyczka i poetka', ' znana przede wszystkim z publikacji na temat mechanicznego komputera Charlesa Babbage’a', ' zwanego maszyną analityczną.']
+  ```
+  Wynikiem takiego podziału jest lista (omówiona w punkcie 6).
 
-#### 4.3.3 Dodawanie stringów
-
-Aby w stringu 
-- indeksowanie
-- slices
-- split()
+- Indeksowanie
 
 
 
