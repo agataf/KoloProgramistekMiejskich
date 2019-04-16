@@ -1,6 +1,6 @@
 # Zajęcia 1
 
-Spis treści:
+## Spis treści:
 
 [1. Repl.it](#1-replit)
 
