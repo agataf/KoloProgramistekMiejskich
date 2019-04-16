@@ -313,10 +313,44 @@ print(a + str(b))
 Zauważmy, że 56 to nie wynik dodawania, tylko wynik "doklejenia" `a` i `b`
 
 ## 5. Listy
+Listy to zbiory elementów. Mogą zawierać elementy różnych typów:
+```python
+lista1 = [1, 54, 78, 2]
+lista2 = ["imię", "kot", "kod"]
+lista3 = [1.0, "pięć", 6]
+```
+## 5.1 Podstawowe operacje
+Możemy na nich wykonywać działania dodawania, mnożenia, obracania, wybierania elementów indeksami i sprawdzania długości jak w stringach. Jest tak dlatego, że stringi są bardzo podobnymi strukturami do list - można w uproszczeniu powiedzieć, że są listami, w których każdy element jest literą.
 
-### 5.1 Tworzenie list
-- indeksowanie
-- ' '.join()
+```python
+print(lista1 + lista2)
+> [1, 54, 78, 2, 'imię', 'kot', 'kod']
+
+print(lista3 * 5)
+> [1.0, 'pięć', 6, 1.0, 'pięć', 6, 1.0, 'pięć', 6, 1.0, 'pięć', 6, 1.0, 'pięć', 6]
+
+lista3.reverse()
+print(lista3)
+> [6, 'pięć', 1.0]
+
+print(lista2[::-1])
+> ['kod', 'kot', 'imię']
+
+print(lista1[0:2])
+> [1, 54]
+
+print(len(lista1))
+> 4
+```
+
+## 5.2 funkcja `append()`
+Możemy dodać pojedynczy element do listy używając funkcji `append()`:
+```python
+lista2.append("nowy string")
+print(lista2)
+> ['imię', 'kot', 'kod', 'nowy string']
+```
+
 
 ## 6. input()
 Funkcja `input()` pozwala na przyjęcie zmiennych od użytkownika. W nawiasach możemy podać `string`, którego treść zostanie wydrukowana i pokazana użytkownikowi. Znaki wpisane przez użytkownika to wartość zwracana przez funkcję (zapisywana do zmiennej `przyjete`):
