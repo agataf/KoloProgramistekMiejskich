@@ -52,28 +52,30 @@ for i in range(5):
 4
 ```
 
-## 3. Sprawdzanie podanych zmiennych
-### 3.1 try - except
-### 3.2 assert
-
-## 4. Funkcje
+## 3. Funkcje
 Dotychczas na zajęciach używałyśmy wielu fukcji pythona - jak `print()`, `input()`, `split()`, `int()`, `str()`, `len()`, ect. (pełna lista znajduje się ![tutaj](https://github.com/agataf/KoloProgramistekMiejskich/blob/master/zajecia1/README.md#%C5%9Bci%C4%85ga).
 
-Python pozwala nam też na tworzenie własnych funkcji. Tak wygląda przykładowa funkcja mnożąca podaną liczbę przez 5
+Python pozwala nam też na tworzenie własnych funkcji.
+
+Tak wygląda przykładowa funkcja mnożąca podaną liczbę przez 5
 ```python
-def moja_funkcja(liczba):
+def moja_funkcja(liczba): # przyjmij jeden argument
   wynik = liczba * 5
-  return wynik
+  return wynik # zwróć tą zmienną jako wynik funkcji
 ```
+
 Możemy ją wywołać używając jej nazwy:
 ```python
 a = 7
 b = moja_funkcja(a)
-print b
+print(b)
 > 35
 ```
+W tej funkcji "liczba" to argument, przyjmowany przez funkcję. Gdy wywołując funkcję, podajemy w nawiasie jakąś wartość (lub zmienną), wewnątrz funkcji przyjmuje ona nazwę wpisaną w definicji (w tym przypadku `a` przyjmuje nazwę `liczba` _ale tylko wewnątrz funkcji_).
 
-## 5. List comprehension
+W ostatniej linijce funkcji (`return wynik`), funkcja zwraca wartość, która zapisana zostanie w `b`, gdy ją wywołamy.
+
+## 4. List comprehension
 Jeżeli chcemy stworzyć listę stu pierwszych wielokrotności 5 używając pętli for:
 ```python
 lista = []
