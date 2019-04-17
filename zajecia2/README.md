@@ -156,15 +156,28 @@ Na przykład, jeśli chcemy na podstawie wieku określić, czy użytkowniczka je
 
 ```python
 wiek = input("podaj swój wiek\n")
+wiek = int(wiek) # zmień typ zmiennej na int, by móc porównywać wartości
 
 if wiek < 13:
+	# pierwszy blok kodu
 	print("jesteś małoletnia")
 elif wiek < 18: # już wiemy że wiek nie jest mniejszy od 13, więc `wiek >= 13` na pewno jest prawdziwe
+	# drugi blok kodu
 	print("jesteś niepełnoletnia")
 else: # już wiemy że `wiek >= 13` i `wiek >=18`
+	# trzeci blok kodu
 	print("jesteś pełnoletnia")
+# koniec
 ```
 Można używać dowolnie wiele wyrażeń `elif`, i nie ma obowiązku kończenia wyrażenia warunkiem `else`. Ważna jest jedynie, że `else`i `elif` zawsze są rozłączne logicznie wobec wszystich warunków je poprzedzających, oraz że lista warunków musi zacząć się wyrażeniem `if`.
+
+W kodzie podanym powyżej, program przyjmuje zmienną od użytkownika, zmienia jej typ na `int`, po czym:
+- sprawdza czy pierwszy warunek (wiek < 13) jest prawdziwy, i jeśli tak, drukuje "jesteś małoletnia" i przeskakuje do linii bezpośrednio po zakończonym zbiorze warunków (linia, w którą wpisałam komentarz "koniec")
+- jeśli pierwszy warunek nie jest prawdziwy, program nie wchodzi do bloku kodu, a zamiast tego przechodzi do drugiego warunku
+- drugi warunek (`elif wiek < 18`) jest _rozłączny_ z pierwszym warunkiem (`elif` pochodzi od "else if" - w innym wypadku, jeżeli ...). Dlatego w tej linii wiemy już, że wiek na pewno nie jest mniejszy od 13 (prawdą jest, że `wiek >= 13`). Wystarczy więc jedynie sprawdzić, czy `wiek < 18`, aby wykryć, czy leży od w zakresie 13-18 lat.
+- jeśli drugi warunek jest spełniony, program wchodzi do drugiego bloku kodu, wykonuje go (drukuje "jesteś niepełnoletnia"), a następnie przechodzi do linii oznaczonej w tym przypadku komentarzem "koniec"
+- jeśli drugi warunek nie jest spełniony, wiemy że `wiek >= 13` i `wiek >=18`. Program nie wchodzi do drugiego bloku kodu, tylko przechodzi do kolejnego warunku.
+- w naszym przypadku ten warunek to `else` (w innym wypadku) - co oznacza że jeśli wszystkie powyższe warunki nie zostały spełnione, zostaje wykonany trzeci blok kodu, po czym program przechodzi do linii po zbiorze warunków.
 
 ## 5. range (_zakres_)
 Funkcja range, opisana [tutaj](https://docs.python.org/3/library/stdtypes.html#range).
@@ -193,15 +206,21 @@ print(c)
 ## 6. for (_dla_)
 For to przykład, który umożliwia _iterację_ (powtórzenie zadania) dla każdego elementu jakiegoś zbioru (na przykład listy)
 
+Dla każdego elementu listy, pętla for wykonuje blok kodu bezpośrednio po niej następujący.
 ```python
-lista = [1, 2, 3, 4]
+lista = ["a", "b", "c", "d"]
 for el in lista: # el jest umowną zmienną, w którą zapisywany jest konkretny element przy danej iteracji. Może mieć dowolną nazwę.
 	print(el)
+	print("Jestem tutaj", el)
 	
-> 1
-2
-3
-4
+> a
+Jestem tutaj a
+b
+Jestem tutaj b
+c
+Jestem tutaj c
+d
+Jestem tutaj d
 ```
 
 Możemy używać też funkcji `range()`, aby _iterować_ przez kolejne liczby
@@ -232,7 +251,13 @@ numer 2
 numer 3
 ```
 
-Pętla ta jest przydatna na przykład do sprawdzenia haseł podanych przez użytkownika
+Zauważ, że powyższa pętla jest ekwiwalentna do
+
+```python
+for i in range(4):
+	print(i)
+```
+Pętla while pozwala nam jednak na większą elastyczność niż pętla for, i jest przydatna na przykład do sprawdzenia haseł podanych przez użytkownika
 
 ```python
 pin = 1234
